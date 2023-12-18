@@ -1,18 +1,18 @@
 import Buyable from '../domain/Buyable';
 
 export default class Cart {
-    private _items: Buyable[] = [];
+    private cartItems: Buyable[] = [];
 
     add(item: Buyable): void {
-        this._items.push(item);
+        this.items.push(item);
     }
 
     get items(): Buyable[] {
-        return [...this._items]; 
+        return [...this.cartItems]; 
     }
 
     calculateTotalPrice(): number {
-        return this._items.reduce((total, item) => total + item.price, 0);
+        return this.cartItems.reduce((total, item) => total + item.price, 0);
     }
 
     calculateDiscountedTotalPrice(discount: number): number {
@@ -25,6 +25,6 @@ export default class Cart {
     }
 
     removeItemById(id: number): void {
-        this._items = this._items.filter(item => item.id !== id);
+        this.cartItems = this.cartItems.filter(item => item.id !== id);
     }
 }
