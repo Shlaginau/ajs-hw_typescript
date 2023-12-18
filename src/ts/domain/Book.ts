@@ -7,5 +7,5 @@ export default class Book implements Buyable {
         readonly author: string,
         readonly pages: number,
         readonly price: number,
-    ) { }
+    ) {}
 }

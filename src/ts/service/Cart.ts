@@ -4,7 +4,7 @@ export default class Cart {
     private cartItems: Buyable[] = [];
 
     add(item: Buyable): void {
-        this.items.push(item);
+        this.cartItems.push(item);
     }
 
     get items(): Buyable[] {
