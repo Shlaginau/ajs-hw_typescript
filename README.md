@@ -1,5 +1,3 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/0t53h3bmegooudaj?svg=true)](https://ci.appveyor.com/project/Shlaginau/ajs-hw-typescript)
-
 # Домашнее задание к лекции «TypeScript»
 
 **Важно**: все задачи допустимо выполнять в одном GitHub репозитории.
